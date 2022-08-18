@@ -1,0 +1,805 @@
+/*------------FrontPage------------*/
+@font-face {
+	font-family: stalemate;
+	src: url("/fonts/Stalemate-Regular.ttf");
+	}
+@font-face {
+	font-family: SeasidResortNF;
+	src: url("/fonts/SeasideResortNF.ttf");
+}
+:root {
+	--ShadowForTrondErik: box-shadow: 0 10px 15px rgba(0, 0, 0.1);
+}
+
+/*------------FrontPage - DropDown------------*/
+ul {
+	margin: 5px;
+}
+
+
+.header {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	color: #333;
+	font-size: 2em;
+	font-family: stalemate;
+}
+.meny{
+	margin-left:20%;
+}
+.dropDownList {
+	user-select: none;
+	color: black;
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px;
+	background-color: rgb(246, 153, 116);
+	border: 1px solid black;
+	text-align: center;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	width: 75%;
+}
+.dropDownList:hover {
+	background-color: rgb(242, 166, 136);
+	color: #333;
+}
+.smallerHeader {
+	margin: 0px;
+	padding: 0px;
+	font-family: SeasidResortNF;
+}
+.footer {
+	grid-area: footer;
+}
+
+.search-icon {
+	background-color: rgb(246, 153, 116);
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	width: 30px;
+	color:#333;
+	margin-right:3px;
+	margin-bottom: 3px;
+	margin-top: 1px;
+}
+
+.search-icon:hover {
+	background-color: rgb(242, 250, 140);
+}
+
+.search-field {
+	background-color: rgb(255, 255, 255);
+	color: #333;
+	border: none;
+	height: 28px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	border-radius: 5px;
+	border:solid 2px rgb(246, 153, 116);
+	
+}
+
+.admin-btn {
+		color: #333;
+		background-color: rgb(233, 104, 53);
+		border: none;
+		border-radius: 0.3em;
+		height: 30px;
+}
+
+.to-cart-btn {
+	color: #333;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	height: 30px;
+	float: right;
+	justify-content: right;
+}
+
+.to-login-btn {
+	color: #333;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	height: 30px;
+}
+
+.to-back-btn {
+	color: #333;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	height: 30px;
+}
+
+.liteFelt {
+	color: #333;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	height: 50px;
+}
+.liteFeltProducts{
+	list-style-type: none;
+	margin-left:0px;
+}
+ .liteFeltLi {
+	list-style-type: none;
+	float: left;
+	font-size: 1rem;
+} 
+.liteFeltLi1 {
+	list-style-type: none;
+	float:right;
+	font-size: 1rem;
+	margin: 0% 0% 1% 9%;
+
+}
+
+.sublist {
+	user-select: none;
+	background-color: rgb(242, 250, 140);
+	color: black;
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px;
+	margin-left: 10px;
+	border: 1px solid black;
+	text-align: center;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	width: 75%;
+}
+.sublist:hover {
+	background-color: rgb(244, 241, 187);
+	color: #333;
+}
+
+/*------------FrontPage - Produkter------------*/
+.rows {
+	float: left;
+	width: 20%;
+	height: auto;
+	margin-top: 2%;
+	margin-left: 1%;
+	font-size: 1rem;
+	padding: 10px;
+}
+.first {
+	clear: left;
+}
+
+.stock {
+	font-size: 0.9rem;
+	color: #333;
+}
+
+.front-price {
+	font-size: 2rem;
+	color: #333;
+}
+
+.front-item-title {
+	color: #333;
+	font-size: 1.2em;
+}
+
+.front-column {
+	align-items: center;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+.front-item-btn {
+	margin: 0px;
+	padding: 5px;
+	color: #333;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	height: 40px;
+	width: 70%;
+	min-width: 150px;
+}
+.front-item-btn:hover {
+	background-color: rgb(242, 250, 140);
+	color: #333;
+}
+.front-item-image {
+	width: 13em;
+	height: 10em;
+	border-radius: 10px;
+	border: solid black 1px;
+	margin-bottom: 2px;
+}
+
+.front-item-image:hover {
+	box-shadow: 0 5px 10px rgba(0, 0, 0.1);
+}
+
+.front-price {
+	width: 5%;
+	font-size: 1.2em;
+	color: #333;
+}
+
+/* *************PRODUCT DESCRIPTION************* */
+.showProduct {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 50%;
+	margin-left: 50%;
+
+}
+
+.product-column{
+	display: flex;
+	justify-content: center;
+}
+
+.product-header {
+	font-weight:lighter;
+	font-size: 2.2em;
+	color: #333;
+	display: flex;
+	align-self: flex-end;
+	margin-top: 100px;
+	margin-bottom: -50px;
+	margin-right: 20%;
+	margin-left: 80%;
+}
+
+.product-item-main-image {
+	display: flex;
+	height: 300px;
+	width: 300px;
+	align-items: left;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.product-row {
+	display:flex;
+	margin-top: 5.5em;
+	margin-left: 5.5em;
+	align-self: flex-end;
+	justify-content: center;
+	
+}
+
+.product-item-description {
+	color: #333;
+	background-color: rgb(255, 255, 255);
+	font-size: 1.2em;
+	display: flex;
+	margin-right: -300px;
+	margin-left: 50px;
+	border: solid 1px;
+	width: 300px;
+	height:300px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	
+}
+
+.product-price {
+	display: flex;
+	text-align: left;
+	align-items: left;
+	width: 150px;
+	color: #333;
+	font-size: 1.5em;
+
+}
+
+.product-input-btn {
+	display:flex;
+	align-items: bottom;
+	margin-top: auto;
+	align-self: flex-end;
+	margin-right: -300px;
+	margin-top: 10px;
+}
+
+.product-quantity-input {
+	height: 34px;
+	width: 53px;
+	border-radius: 5px;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(218, 218, 218);
+	padding: 0;
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+
+/* *************CreateViewProduct************* */
+
+.createProduct-input {
+	align-self: row;
+	justify-content: center;
+	margin: 20px;
+	
+}
+
+/* *************HANDLEKURV************* */
+
+.cart-main {
+	background-color: rgb(162, 222, 208);
+}
+
+.cart-main-header {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #333;
+	background-color: rgb(162, 222, 208);
+}
+.cart-header {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #333;
+}
+
+.cart-navigation {
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+.btn-cart-navigation {
+	color: #333;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	height: 34px;
+	margin-right: 25px;
+}
+
+.btn-cart-navigation:hover {
+	background-color: rgb(246, 153, 116);
+}
+
+.cart-column {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid black;
+	margin-right: 1.5em;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+.cart-row {
+	display: flex;
+}
+
+.cart-item {
+	width: 45%;
+}
+
+.cart-price {
+	width: 20%;
+	font-size: 1.2em;
+	color: #333;
+}
+
+.cart-quantity {
+	width: 35%;
+	height: auto;
+}
+
+.cart-item-title {
+	color: #333;
+	margin-left: 0.5em;
+	font-size: 1.2em;
+}
+
+.cart-item-image {
+	width: 75px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.btn-danger {
+	color: #333;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	font-weight: bold;
+	height: 34px;
+}
+
+.btn-danger:hover {
+	background-color: rgb(246, 153, 116);
+}
+
+.btn-buy {
+	width: 55px;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	font-weight: bold;
+	height: 34px;
+	margin-top: 30px;
+	display: block;
+	margin: 40px;
+	color: #333;
+}
+
+.btn-buy:hover {
+	background-color: rgb(246, 153, 116);
+}
+
+.cart-quantity-input {
+	height: 34px;
+	width: 50px;
+	border-radius: 5px;
+	border: 1px solid rgb(162, 222, 208);
+	background-color: rgb(218, 218, 218);
+	padding: 0;
+	text-align: center;
+	font-size: 1.2em;
+	margin-right: 25px;
+}
+
+.cart-row:last-child {
+	border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+	border: none;
+}
+
+.cart-total {
+	text-align: end;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.cart-total-title {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: black;
+	margin-right: 20px;
+}
+
+.cart-total-price {
+	color: #333;
+	font-size: 1.1em;
+}
+
+.cart {
+	border: solid;
+}
+
+body {
+	background-color: rgb(162, 222, 208);
+}
+
+/*----------PAY------------*/
+
+.pay-page {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+.container {
+	min-height: 100vh;
+	background: rgb(238, 238, 238);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	padding-bottom: 60px;
+}
+
+.container form {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 10px 15px rgba(0, 0, 0.1);
+	padding: 20px;
+	width: 600px;
+}
+
+.container form .inputBox {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.cvv-input {
+	width: 20px;
+}
+
+.container form .inputBox span {
+	display: block;
+	color: #999;
+	padding-bottom: 5px;
+}
+
+.container form .inputBox input,
+.container form .inputBox select {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0.1);
+	color: #444;
+}
+
+.container form .flexbox {
+	display: flex;
+	gap: 15px;
+}
+
+.container form .flexbox .inputBox {
+	flex: 1 1 150px;
+}
+
+.container form .submit-btn {
+	width: 100%;
+	background: linear-gradient(45deg, rgb(162, 222, 208), rgb(162, 222, 208));
+	margin-top: 20px;
+	padding: 10px;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	transition: 2s linear;
+	break-before: 5px;
+	border-radius: 5px;
+}
+
+/*----------LOGIN------------*/
+.h2Login {
+	text-align: center;
+}
+.headerL{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	color: #333;
+	font-size: 2em;
+	font-family: stalemate;
+}
+.paragraphMail {
+	text-align: center;
+	text-decoration: underline;
+}
+.Phone {
+	text-align: center;
+}
+.paragraphLogin {
+	text-align: center;
+}
+.username {
+	font-size: 15px;
+	height: 20px;
+	width: 200px;
+	padding: 5px;
+	border-radius: 5px;
+	border: solid 2px rgb(246, 153, 116);
+}
+.password {
+	font-size: 15px;
+	height: 20px;
+	width: 200px;
+	padding: 5px;
+	border-radius: 5px;
+	border: solid 2px rgb(246, 153, 116);
+}
+.usernamePosition {
+	text-align: center;
+	margin-top: 1%;
+}
+.passwordPosition {
+	text-align: center;
+	margin-top: 1%;
+}
+.loginPosition {
+	text-align: center;
+
+}
+.loginButtonPosition {
+	text-align: center;
+}
+
+.loginButton {
+	background-color: rgb(246, 153, 116);
+	color: #333;
+	width: 200px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.loginButton:active {
+	background-color: rgb(242, 250, 140);
+	box-shadow: 1px 1px 1px 1px black;
+}
+
+.account-btn {
+	width: 300px;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	height: 30px;
+	color: #333;
+}
+
+.account-btn:active {
+	background-color: rgb(242, 250, 140);
+}
+
+.account-btn-right {
+	width: 150px;
+	margin: 3px;
+	background-color: rgb(246, 153, 116);
+	border: none;
+	border-radius: 0.3em;
+	height: 30px;
+	color: #333;
+}
+
+.account-btn-right:active {
+	background-color: rgb(242, 250, 140);
+}
+
+.account-input {
+	font-size: 15px;
+	height: 25px;
+	width: 200px;
+	margin:5px;
+	border-radius: 5px;
+	border: solid 2px rgb(246, 153, 116);
+}
+
+.forgotPasswordButton {
+	text-decoration: underline;
+	background-color: rgb(162, 222, 208);
+	width: 30.4%;
+	height: 27px;
+	margin-top: 80px;
+	margin-bottom: -1%;
+	margin-left: 34.8%;
+	padding: 0.5% 0% 0.5% 0%;
+	color: #333;
+	border:none;
+	border-radius: 0.3em;
+}
+
+
+.createUserButton {
+	text-decoration: underline;
+	background-color: rgb(162, 222, 208);
+	width: 30.4%;
+	margin-top: 1%;
+	margin-left: 34.8%;
+	padding: 0.5% 0% 0.5% 0%;
+	border:none;
+	
+}
+
+.backLogin {
+	list-style-type: none;
+	float: left;
+	margin-left:2%;
+}
+.cartLogin {
+	float: right;
+	list-style-type: none;
+	margin-right: 2%;
+}
+
+.toTopButton{
+	color:black;
+	text-decoration: none;
+	font-size: 1rem;
+	margin-left: 2%;
+}
+.toTopButton:hover{
+	color:rgb(244, 241, 187);
+	background-color:rgb(246, 153, 116);
+	border-radius:25%;
+	padding:0.2%;
+}
+.slider{
+	-webkit-appearance: none;
+	border-radius: 20px;
+	background: rgb(242, 250, 140);
+	outline: none;
+	height: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+
+}
+.slider:hover {
+	opacity: 1;
+  }
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgb(246, 153, 116);
+	cursor: pointer;
+  }
+
+  /* Private user site*/
+  .accountInfoButton1{
+	background: rgb(246, 153, 116);
+	color: #333;
+	border: none;
+	border-radius: 0.3em;
+	font-weight: bold;
+	justify-content: center;
+	height: 30px;
+	float:left;
+	margin-left:10%;
+	margin-bottom:5px;
+  }
+
+  .accountInfoButton2{
+	background: rgb(246, 153, 116);
+	color: #333;
+	border: none;
+	border-radius: 0.3em;
+	font-weight: bold;
+	justify-content: center;
+	height: 30px;
+	float:left;
+	margin-left:1%;
+	margin-bottom:5px;
+  }
+
+  .accountInfoButtonList1{
+	  list-style-type: none;
+  }
+
+  .accountInfoButtonList1{
+	list-style-type: none;
+}
+
+.updateViewCreateAccountButton{
+	background: rgb(246, 153, 116);
+	border: none;
+	color: #333;
+	border-radius: 0.3em;
+	font-weight: bold;
+	justify-content: center;
+	height: 30px;
+}
+.ViewNewAccountButton{
+	background: rgb(246, 153, 116);
+	border: none;
+	color: #333;
+	border-radius: 0.3em;
+	font-weight: bold;
+	justify-content: center;
+	height: 30px;
+}
+.ViewNewAccountButton{
+	background: rgb(246, 153, 116);
+	border: none;
+	color: #333;
+	border-radius: 0.3em;
+	font-weight: bold;
+	justify-content: center;
+	height: 30px;
+}
+.overflowAccountInfo{
+	overflow: auto;
+}
+li{
+	list-style-type: none;
+}

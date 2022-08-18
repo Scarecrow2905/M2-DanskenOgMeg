@@ -1,0 +1,323 @@
+:root {
+--MainFarge: rgb(162, 222, 208);
+/* var(--MainFarge); */
+}
+
+/*-----------------ViewFront------------------------*/
+body {
+    margin:0;
+    padding:0;
+} 
+.page{
+    background-color: rgb(162, 222, 208);
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    grid-template-rows: 1fr 0.5fr 7fr 0.5fr ;
+    grid-template-areas: 'header header header'
+                         'liteFelt liteFelt liteFelt'
+                         'meny innhold innhold '
+                         'footer footer footer ';
+}
+div.header {
+    background-color: rgb(162, 222, 208);
+    grid-area: header;
+}
+div.meny {
+    background-color:rgb(162, 222, 208);
+    grid-area: meny;
+    margin-top:14%;
+}
+
+div.innhold {
+    background-color: rgb(162, 222, 208);
+    grid-area: innhold;
+
+}
+
+div.liteFelt {
+    background-color:rgb(162, 222, 208);
+    grid-area: liteFelt;
+}
+div.footer {
+    background-color:rgb(162, 222, 208);
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 1100px){
+    .page {
+        display: grid;
+        height: 50vh;
+        grid-template-columns: 2fr 3fr 3fr;
+        grid-template-rows: 1fr 1fr 7fr 0.5fr;
+        grid-template-areas: 'header header header'
+                             'liteFelt liteFelt liteFelt'
+                             'meny innhold innhold'
+                             'footer footer footer';
+    }
+
+
+div.header {
+    background-color: rgb(162, 222, 208);
+    grid-area: header;
+}
+
+div.meny {
+    background-color:rgb(162, 222, 208);
+    grid-area: meny;
+    max-width: 500px;
+}
+
+div.innhold {
+    background-color: rgb(162, 222, 208);
+    grid-area: innhold;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+}
+div.liteFelt {
+    background-color:rgb(162, 222, 208);
+    grid-area: liteFelt;
+    height: 100px; 
+}
+
+div.footer {
+    background-color:rgb(162, 222, 208);
+    grid-area: footer;
+}
+}
+
+@media only screen and (max-width: 750px){
+    .page {
+        display: grid;
+        height: 50vh;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: 1fr 1fr 7fr 0.5fr;
+        grid-template-areas: 'header header header'
+                             'liteFelt liteFelt liteFelt'
+                             'meny innhold innhold'
+                             'footer footer footer';
+    }
+
+
+div.header {
+    background-color: rgb(162, 222, 208);
+    grid-area: header;
+}
+
+div.meny {
+    background-color:rgb(162, 222, 208);
+    grid-area: meny;
+    max-width: 600px;
+}
+
+div.innhold {
+    background-color: rgb(162, 222, 208);
+    grid-area: innhold;
+    display: grid;
+    grid-template-columns: 3fr;
+
+}
+div.liteFelt {
+    background-color:rgb(162, 222, 208);
+    grid-area: liteFelt;
+    height: 100px; 
+}
+
+div.footer {
+    background-color:rgb(162, 222, 208);
+    grid-area: footer;
+}
+}
+
+@media only screen and (max-width: 640px){
+    .page {
+        display: grid;
+        height: 50vh;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr 0.5fr 7fr 0.5fr;
+        grid-template-areas: 'header header header'
+                             'liteFelt liteFelt liteFelt'
+                             'meny innhold innhold'
+                             'footer footer footer';
+    }
+
+
+div.header {
+    background-color: rgb(162, 222, 208);
+    grid-area: header;
+}
+
+div.meny {
+    background-color:rgb(162, 222, 208);
+    grid-area: meny;
+    max-width: 500px;
+}
+
+div.innhold {
+    background-color: rgb(162, 222, 208);
+    grid-area: innhold;
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+
+div.liteFelt {
+    background-color:rgb(162, 222, 208);
+    grid-area: liteFelt;
+    height: 100px; 
+}
+
+div.footer {
+    background-color:rgb(162, 222, 208);
+    grid-area: footer;
+}
+}
+
+
+/*-----------LOGIN-----------*/
+    .loginPage{
+        background-color: rgb(162, 222, 208);
+        height: 100vh;
+        display: grid;
+        grid-template-columns:1fr 5fr 1fr;
+        grid-template-rows: 1fr 1fr 8fr 2fr ;
+        grid-template-areas: 'headerL headerL headerL'
+                             'smalLinje smalLinje smalLinje'
+                             'innholdL menyL innhold1L' 
+                             'footerL footerL footerL';
+    }
+.headerL {
+    background-color: rgb(162, 222, 208);
+    grid-area: headerL;
+}
+.smalLinje{
+    background-color:rgb(162, 222, 208);
+    grid-area: smalLinje;
+}
+.menyL {
+    background-color:rgb(162, 222, 208);
+    grid-area: menyL;
+}
+.innholdL {
+    background-color:rgb(162, 222, 208);
+    grid-area: innholdL;
+}
+.innhold1L {
+    background-color:rgb(162, 222, 208);
+    grid-area: innhold1L;
+}
+.footerL {
+    background-color:rgb(162, 222, 208);
+    grid-area: footerL;
+}
+
+
+
+/*-----------LOGIN-----------*/
+.accountInfoPage{
+    background-color: rgb(162, 222, 208);
+    height: 100vh;
+    display:grid;
+    grid-template-columns:1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 0.6fr 8fr 1fr 0.5fr;
+    grid-template-areas: 'headerL headerL headerL headerL headerL'
+                         'smalLinje smalLinje smalLinje smalLinje smalLinje'
+                         'innholdP0 innholdP1 innholdP2 innholdP3 innholdP4' 
+                         'innholdP0 innholdP1 innholdP2 innholdP3 innholdP4'
+                         'footerA footerA footerA footerA footerA';
+}
+.headerL {
+background-color: rgb(162, 222, 208);
+grid-area: headerL;
+}
+.smalLinje{
+background-color:rgb(162, 222, 208);
+grid-area: smalLinje;
+}
+.innholdP0 {
+background-color:rgb(162, 222, 208);
+grid-area: innholdP0;
+}
+.innholdP1 {
+background-color:white;
+border:1px solid black;
+padding: 10px;
+overflow:scroll;
+grid-area: innholdP1;
+}
+.innholdP2 {
+background-color:rgb(162, 222, 208);
+grid-area: innholdP2;
+}
+.innholdP3 {
+background-color:white;
+border:1px solid black;
+overflow:hidden;
+grid-area: innholdP3;
+}
+.innholdP4 {
+background-color:rgb(162, 222, 208);
+grid-area: innholdP4;
+}
+.footerA {
+background-color:rgb(162, 222, 208);
+grid-area: footerA;
+}
+
+@media only screen and (max-width: 640px){
+    .accountInfoPage {
+        background-color: rgb(162, 222, 208);
+        height: 100%;
+        display:grid;
+        grid-template-columns:1fr ;
+        grid-template-rows: 2fr 0.5fr 0.5fr 4fr 0.5fr 2fr 1fr 1fr ;
+        grid-template-areas: 'headerL '
+                             'smalLinje '
+                             'innholdP0'
+                             'innholdP1 ' 
+                             'innholdP2'
+                             'innholdP3 '
+                             'innholdP4'
+                             'footerA' ;
+                             
+    }
+    .headerL {
+        background-color: rgb(162, 222, 208);
+        grid-area: headerL;
+        }
+        .smalLinje{
+        background-color:rgb(162, 222, 208);
+        grid-area: smalLinje;
+        float:left;
+        }
+        .innholdP0 {
+        background-color:rgb(162, 222, 208);
+        grid-area: innholdP0;
+        }
+        .innholdP1 {
+        background-color:white;
+        border:1px solid black;
+        padding: 10px;
+        overflow:scroll;
+        grid-area: innholdP1;
+        }
+        .innholdP2 {
+        background-color:rgb(162, 222, 208);
+        grid-area: innholdP2;
+        }
+        .innholdP3 {
+        background-color:white;
+        border:1px solid black;
+        overflow:scroll;
+        grid-area: innholdP3;
+        }
+        .innholdP4 {
+        background-color:rgb(162, 222, 208);
+        grid-area: innholdP4;
+        }
+        .footerA {
+        background-color:rgb(162, 222, 208);
+        grid-area: footerA;
+        }
+}

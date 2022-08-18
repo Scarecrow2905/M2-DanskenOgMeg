@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="model.js"></script>
+    <script src="products.js"></script>
+    <!-----------------Views------------------------>
+    <script src="view/viewCart.js"></script>
+    <script src="view/viewLogin.js"></script>
+    <script src="view/viewFront.js"></script>
+    <script src="view/viewPay.js"></script>
+    <script src="view/viewProduct.js"></script>
+    <script src="view/viewCreateProduct.js"></script>
+    <script src="view/viewCreateCategory.js"></script>
+    <script src="https://kit.fontawesome.com/9f6c69449f.js" crossorigin="anonymous"></script> <!-- Ikoner?-->
+    <script src="modaler.js"></script>
+    
+    
+    <!----------functions-------------->
+    <script src="common.js"></script>
+    <script src="controller.js"></script>
+  
+    
+    <!---------------Styles----------------------->
+    <link rel="stylesheet" href="css/grid.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style-createProduct.css"/>
+    <link rel="stylesheet" href="css/modal.css">
+<body>
+    <div id='app'></div>
+    <script>
+    let appDiv = document.getElementById('app');
+    updateView();
+    viewStuff(100);
+    make(100);
+    function updateView(){
+        let html = '';
+        const page = model.app.currentPage; 
+             if (page === 'FrontPage') html = updateViewFront(); 
+        else if (page === 'Product') html = updateViewProduct();
+        else if (page === 'Cart') html = updateViewCart();
+        else if (page === 'LoginMail') html = updateViewLoginWithMail();
+        else if (page === 'LoginPhone') html = updateViewLoginWithPhone();
+        else if (page === 'createNewAccount') html = updateViewCreateAccount();
+        else if (page === 'viewNewAccount') html = updateViewNewAccount();
+        else if (page === 'accountInfo') html = updateViewAccountInfo();
+        else if (page === 'PayPage') html = updateViewPay();
+        else if (page === 'viewProduct') html = viewProduct();
+        else if (page === 'viewCreateProduct') html = viewCreateProduct();
+        else if (page === 'viewCreateCategory') html = viewCreateCategory();
+        appDiv.innerHTML = html;
+    }
+    </script>
+</body>
+</html>
