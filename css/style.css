@@ -2,6 +2,9 @@
 @font-face {
 	font-family: stalemate;
 	src: url("/fonts/Stalemate-Regular.ttf");
+	font-family: SeasidResortNF;
+	src: url("/fonts/SeasideResortNF.ttf");
+	
 	}
 @font-face {
 	font-family: SeasidResortNF;
